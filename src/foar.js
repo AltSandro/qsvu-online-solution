@@ -1,9 +1,7 @@
 'use strict'
 combineArraysIntoFourthArray(fourthArray, keys, ...convertMatrixToList(matrix));
-console.log(fourthArray);
 
 function convertMatrixToList(matrix) {
-    console.log([...matrix]);
     return [...matrix]; 
     
 }
@@ -26,6 +24,5 @@ function combineArraysIntoFourthArray(fourthArray, keys, ...arrays) {
 
             fourthArray.push(object);
     }
-    console.log(fourthArray);
 }
 

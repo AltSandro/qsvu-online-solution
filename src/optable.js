@@ -25,35 +25,23 @@ const options = {};
 
         if ( (selectedValue === '1') || (selectedValue === '2') || (selectedValue === '3') || (selectedValue === '7') ) {
             options.useDeepCooling = false;
-            console.log(options.useDeepCooling);
             
             options.vFallF = options.def.vFallF; 
-            console.log(`станд усл ох, фреон красный - ${options.vFallF}`);
             options.vFallC = options.def.vFallC;
-            console.log(`станд усл ох, вода красный - ${options.vFallC}`);
             options.vNormF = options.def.vNormF;
-            console.log(`станд усл ох, фреон желт - ${options.vNormF}`);
             options.vNormC = options.def.vNormC;
-            console.log(`станд усл ох, фреон желт - ${options.vNormC}`);
             options.vFallH = options.def.vFallH;
-            console.log(`предупрежд ТО при ст. ус - ${options.vFallH}`);
             options.vNormH = options.def.vNormH;
 
         } else if ( (selectedValue === '4' ) || (selectedValue === '5') || (selectedValue === '6')) {
             options.useDeepCooling = true;
 
             options.vFallF = options.def.vFallDeepCooling;
-            console.log(`глубокое, фреон красный - ${options.vFallF}`);
             options.vFallC = options.def.vFallDeepCooling;
-            console.log(`глубокое, вода красный - ${options.vFallC}`);
             options.vNormF = options.def.vDeepCooling;
-            console.log(`глубокое, фреон желт - ${options.vNormF}`);
             options.vNormC = options.def.vDeepCooling;
-            console.log(`глубокое, вода желт - ${options.vNormC}`);
             options.vFallH = options.def.vFallH;
-            console.log(`предупрежд ТО при глуб ох - ${options.vFallH}`);
             options.vNormH = options.def.vNormH;
-            console.log(`запрет на использ-е теплого ТО при глуб ох - ${options.vNormH}`);
         } 
     }
 
@@ -181,9 +169,6 @@ mainTableLimitLightingChange();
                 options.onlyHeavyPowerHeat = true; 
             }
 
-            console.log(`"кр пр. выбора' исп-ет фреон?-"${options.useFreon}`);
-            console.log(`"кр пр. выбора' исп-ет вх-"${options.useCool}`);
-            console.log(`"кр пр. выбора' только нагр?-"${options.onlyHeat}`);
         }
         selector.addEventListener('change', changeExchangersSelectorParametrs);
 
