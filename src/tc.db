@@ -1,0 +1,14 @@
+const coilsRtitles = [
+    '1R_H',
+    '2R_H',
+    '3R_H',
+    '3R_C',
+    '4R_C',
+    '5R_C', 
+    '6R_C',
+    '7R_C', 
+    '2R_F', 
+    '3R_F', 
+    '4R_F', 
+    '5R_F',
+];
