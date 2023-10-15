@@ -5,12 +5,12 @@
     }, 777);
   }
 
-  /*if ((window.location.href !== "altsandro.github.io/qsvu-online-solution")  ||
-  (window.location.href !== "altsandro.github.io/qsvu-online-solution/index.html")) {
+  if ((window.location.href !== "https://altsandro.github.io/qsvu-online-solution/")  ||
+  (window.location.href !== "https://altsandro.github.io/qsvu-online-solution/index.html")) {
     setTimeout(() => {
       godsEye()
     }, 777); 
-  }*/
+  }
   
   function godsEye() {
     for (let elem of fourthArray) {
