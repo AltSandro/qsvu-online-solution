@@ -5,8 +5,7 @@
     }, 777);
   }
 
-  if ((window.location.href !== "https://altsandro.github.io/qsvu-online-solution/")  &&
-  (window.location.href !== "https://altsandro.github.io/qsvu-online-solution/index.html")) {
+  if (window.location.pathname !== "/qsvu-online-solution/" && window.location.pathname !== "/qsvu-online-solution/index.html") {
     setTimeout(() => {
       godsEye()
     }, 777); 

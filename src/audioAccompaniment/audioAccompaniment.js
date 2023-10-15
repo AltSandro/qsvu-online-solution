@@ -1,6 +1,4 @@
 
-$("body").on("click", function() {});
-
 $(document).ready(function() {
   if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       const buttonCls = soundClsDB;
