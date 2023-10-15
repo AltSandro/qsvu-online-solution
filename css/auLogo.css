@@ -1,8 +1,0 @@
-.AltSLogo {
-    height: 40px;
-    transition: filter 0.33s;
-}
-
-.AltSLogo:hover {
-    filter: hue-rotate(47deg);
-}
