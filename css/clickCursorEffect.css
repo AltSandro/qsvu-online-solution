@@ -1,0 +1,21 @@
+.clickCursorEffect {
+    width: 3px;
+    height: 3px;
+    background-color: rgba(6, 118, 245, 0.897);
+    border-radius: 50%;
+    position: absolute;
+    animation: click 0.27s forwards;
+    z-index: 7;
+  }
+
+@keyframes click {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(20);
+    opacity: 0;
+  }
+}
