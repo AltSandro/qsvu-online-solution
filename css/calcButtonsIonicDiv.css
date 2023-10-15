@@ -1,0 +1,167 @@
+:root {
+    --multibuttonSelectorBagColor: hsl(244, 89%, 51%);
+    --multibuttonStartButtonSh: #27e6d671;
+    --multibuttonStartButtonColor: rgb(2, 156, 2);
+}
+
+.multi-button {
+    margin-left: 10px;
+    border-radius: 30px;
+    border: 1px solid;
+    background: var(--multibuttonSelectorBagColor);
+    align-items: center;
+}
+
+.multi-button button.first {
+    border-radius: 30px 0px 0px 30px;
+    font-weight: 600;
+    background-color: var(--multibuttonStartButtonColor);
+    box-shadow: 0 0 11px 3px var(--multibuttonStartButtonSh), 0 0 31px 6px var(--multibuttonStartButtonSh);
+}
+
+.multi-button button.third {
+    border-radius: 0px 30px 30px 0px;
+}
+
+.multi-button button {
+    background-color: #000000;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 40px;
+    display: inline-block;
+    outline: none;
+    position: relative;
+    opacity: 1;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: var(--multibuttonSelectorBagColor);
+    text-align: center;
+    border: none;
+    margin: 0;
+    padding: 0.12rem 0.35rem;
+}
+
+.multi-button button:hover {
+    transform: scale(1.12);
+    z-index: 3;
+    box-shadow: 0 0 11px 3px;
+}
+
+.multi-button button:active {
+    transform: scale(1.03);
+    z-index: 3;
+}
+
+.multi-button button span {
+    display: inline-block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.multi-button button ion-icon {
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.multi-button button:before {
+    content: '';
+    top: 0;
+    left: 50%;
+    right: 50%;
+    position: absolute;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+.multi-button button:hover span,
+.multi-button button.hover span {
+    opacity: 0;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.multi-button button:hover ion-icon,
+.multi-button button.hover ion-icon {
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.multi-button button:hover:before,
+.multi-button button.hover:before {
+    left: 0;
+    right: 0;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+particle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 7;
+}
+
+@media (max-width: 476px) {
+    .multi-button {
+        border-radius: 10px 10px 10px 10px;
+        margin-top: 1%;
+    }
+
+    .multi-button button.first {
+        border-radius: 10px 0px 0px 0px;
+        width: 23%;
+    }
+
+    .multi-button button.second {
+        border-radius: 0px 10px 0px 0px;
+        width: 75%;
+    }
+
+    .multi-button button.second span {
+        text-align: center !important;
+    }
+
+    .multi-button button.third {
+        border-radius: 0px 10px 10px 10px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 477px) and (max-width: 676px) {
+    .multi-button {
+        margin-top: 0.4%;
+    }
+
+    .multi-button button.second{
+        border-radius: 0px 0px 0px 0px;
+        min-width: 38%;
+    }
+    .multi-button button.third {
+        min-width: 40%;
+        float: right;
+    }
+}

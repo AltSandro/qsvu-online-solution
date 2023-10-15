@@ -1,0 +1,206 @@
+#scrollableTable {
+    background-color: rgb(245, 233, 179);
+    z-index: 1;
+    position: relative;
+
+    box-shadow: 1px 2px 5px 1px wheat;
+}
+
+.table-scrollable-container,
+#scrollableTable {
+    border-radius: 10px;
+}
+
+.table-scrollable-container {
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px -3px 3px 0px wheat, 3px 0px 3px 0px wheat, -3px 0px 4px 0px wheat;
+}
+
+table {
+    background-color: transparent;
+    margin-bottom: 1rem;
+    width: 85%;
+    z-index: 1;
+}
+
+.table-scrollable-container table,
+#scrollableTable table {
+    border-color: wheat;
+}
+
+table th,
+table td {
+    vertical-align: middle;
+}
+
+table th,
+table td {
+    padding: 1px !important;
+    max-width: 140px;
+}
+
+th.tbCol-1,
+th.tbCol-15 {
+    width: 57px;
+}
+
+th.tbCol-2 {
+    width: 80px;
+}
+
+td.tbCol-2 {
+    position: relative;
+    vertical-align: middle;
+}
+
+table input {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 100%;
+    height: 1.52em;
+    line-height: normal;
+}
+
+table td {
+    height: 2.3em !important;
+}
+
+
+tbody tr:nth-of-type(odd) {
+    background-color: rgba(73, 166, 243, 0.3);
+}
+
+
+td[id^="output_МС-060_2"],
+td[id^="output_МС-060_2"]~td[id^="output_МС-060_"],
+
+td[id^="output_"] {
+    text-align: center;
+    overflow-x: hidden;
+    white-space: nowrap;
+    max-width: 15px;
+}
+
+
+.table-scrollable-container th.tbCol-1,
+.table-scrollable-container th.tbCol-15,
+#scrollableTable th.tbCol-1,
+#scrollableTable th.tbCol-15 {
+    background-color: #FFFFCC;
+}
+
+.table-scrollable-container th.tbCol-2,
+#scrollableTable th.tbCol-2 {
+    background-color: #FFFF99;
+}
+
+.table-scrollable-container th.tbCol-3,
+.table-scrollable-container th.tbCol-4,
+#scrollableTable th.tbCol-3,
+#scrollableTable th.tbCol-4 {
+    background-color: #FFCC99;
+}
+
+.table-scrollable-container th.tbCol-5,
+#scrollableTable th.tbCol-5 {
+    background-color: #FFCCCC;
+}
+
+.table-scrollable-container th.tbCol-6,
+.table-scrollable-container th.tbCol-9,
+.table-scrollable-container th.tbCol-10,
+#scrollableTable th.tbCol-6,
+#scrollableTable th.tbCol-9,
+#scrollableTable th.tbCol-10 {
+    background-color: #9999FF;
+}
+
+.table-scrollable-container th.tbCol-7,
+.table-scrollable-container th.tbCol-8,
+#scrollableTable th.tbCol-7,
+#scrollableTable th.tbCol-8 {
+    background-color: #BDD7EE;
+}
+
+.table-scrollable-container th.tbCol-11,
+.table-scrollable-container th.tbCol-12,
+.table-scrollable-container th.tbCol-14,
+#scrollableTable th.tbCol-11,
+#scrollableTable th.tbCol-12,
+#scrollableTable th.tbCol-14 {
+    background-color: #99FFCC;
+}
+
+.table-scrollable-container th.tbCol-13,
+#scrollableTable th.tbCol-13 {
+    background-color: #8AFEFB;
+}
+
+
+
+.highLimC,
+.highLimF,
+.highLimH {
+    background-color: rgba(240, 164, 77, 0.836) !important;
+}
+
+.highOutsideC,
+.highOutsideF,
+.highOutsideH {
+
+    background-color: rgb(207, 20, 58) !important;
+}
+
+
+input.highQWarn,
+input.highQWarn:focus {
+    background-color: rgb(255, 217, 0);
+}
+
+input.highQBan,
+input.highQBan:focus {
+    background-color: rgb(255, 51, 0);
+}
+
+input.highQWarn,
+input.highQBan {
+    transition: 0s;
+}
+
+.table-scrollable {
+    overflow: auto;
+    touch-action: none;
+}
+
+.table-scrollable:active {
+    cursor: grabbing;
+}
+
+@media (max-width: 665px) {
+    .container {
+        justify-content: center;
+    }
+
+    table th,
+    table td {
+        font-size: 7px;
+    }
+
+    th.tbCol-2 {
+        width: 34px;
+    }
+
+    th.tbCol-1,
+    th.tbCol-15 {
+        max-width: 43px;
+    }
+
+    th.tbCol-2,
+    td.tbCol-2 {
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+    }
+
+}
