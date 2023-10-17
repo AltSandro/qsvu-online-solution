@@ -1,0 +1,76 @@
+:root {
+    --languageSelectorColor: linear-gradient(180deg, #ffcc89, #d8860b);
+    --languageSelectorColorBefor: linear-gradient(180deg, #f0a84b, #ca7f0d);
+}
+
+.langOptionbox {
+    position: fixed;
+    top: 15px;
+    right: -19px;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+.langOptionbox select {
+    background: var(--languageSelectorColor);
+    color: white;
+    padding: 2px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    vertical-align: baseline;
+    width: 50px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    ---webkit-appearance: button;
+    outline: none;
+    transition: 0.37s;
+}
+
+.langOptionbox select option {
+    color: inherit;
+    background-color: #320a28;
+}
+
+.langOptionbox:before {
+    content: url(https://img.icons8.com/color/24/translate-text.png);
+    font-family: "Font Awesome 5 free";
+    position: absolute;
+    border-radius: 0 5px 5px 0;
+    top: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background: var(--languageSelectorColor);
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    font-size: 25px;
+    pointer-events: none;
+    transition: 0.37s;
+}
+
+.langOptionbox:hover:before {
+    transition: 0.37s;
+    background: var(--languageSelectorColorBefor);
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .langOptionbox select {
+        padding-left: 1.4vw;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .langOptionbox select {
+        padding-left: 0.6vw;
+    }
+}
+  
+@media (max-width: 400px) {
+    .langOptionbox select {
+        padding-left: 2px;
+    }
+}

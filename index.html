@@ -28,7 +28,7 @@
     <link href="css/scroolT.css" rel="stylesheet">
     <link href="css/table.css" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
-    <link rel="stylesheet" href="css/typeSizesbut.css">
+    <link rel="stylesheet" href="/css/typeSizesbut.css">
     <link rel="stylesheet" href="https://altsandro.github.io/d.pro-web/css/scratchCarousel.css">
     <link rel="stylesheet" href="https://altsandro.github.io/d.pro-web/css/gameCarouseContainer.css">
     <link rel="stylesheet" href="css/addBaggetBox.css">
@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="css/themeSwitcher.css">
     <link rel="stylesheet" href="css/themeSwitcherComponentsSet.css">
     <link rel="stylesheet" href="css/clickCursorEffect.css">
+    <link rel="stylesheet" href="css/languageSelectorStyle.css">
 
 </head>
 <body data-themeSwitchON>
@@ -102,6 +103,14 @@
         </label>
     </div>
 
+    <div class="langOptionbox excludeClickEffect soundSelect-hover">
+        <select id="languageDropdown" class="excludeClickEffect soundSelect">
+            <option lang="en" value="en">En</option>
+            <option lang="uk" value="uk">Uk</option>
+            <option lang="ru" value="ru">Ru</option>
+        </select>
+    </div>
+
     <div class="menuTop" data-colorInverse id="previousContent" data-themeSwitchON>
         <div class="menuTop-title" data-themeSwitchON>
             <div class="acmLableContainer soundAcmLogo-hover">
@@ -124,50 +133,50 @@
         <div class="overflow-auto ps-2 pe-2">
             <div class="menTop-mainSelector container">
                 <div class="menTop-div soundSelect-hover">
-                    <div class="menTop-div-title" data-themeSwitchON>Утилизатор есть?</div>        
+                    <div class="menTop-div-title langSwitch-item" data-themeSwitchON data-langSwitch-item="item-1">Утилизатор есть?</div>        
                     <div class="menTop-select">
                       <select id="exhaustPartOptionSelect" class="excludeClickEffect soundSelect">
-                        <option value="1">Любой тип утилизатора хоть с вытяжкой, хоть без</option>
-                        <option value="2">Пласт/противоток ПВ</option>
-                        <option value="5">Узкая(но, возможно, высокая) ПВ - отсеивает лишнее только для подвесных</option>
-                        <option value="3">Ротор ПВ</option>
-                        <option value="4">Прямоточная</option>
+                        <option value="1" class="langSwitch-item" data-langSwitch-item="item-2">Любой тип утилизатора хоть с вытяжкой, хоть без</option>
+                        <option value="2" class="langSwitch-item" data-langSwitch-item="item-3">Пласт/противоток ПВ</option>
+                        <option value="5" class="langSwitch-item" data-langSwitch-item="item-4">Узкая(но, возможно, высокая) ПВ - отсеивает лишнее только для подвесных</option>
+                        <option value="3" class="langSwitch-item" data-langSwitch-item="item-5">Ротор ПВ</option>
+                        <option value="4" class="langSwitch-item" data-langSwitch-item="item-6">Прямоточная</option>
                       </select>
                     </div>
                 </div>
     
                 <div class="menTop-div soundSelect-hover">
-                    <div class="menTop-div-title" data-themeSwitchON>Расположение установки:</div>        
+                    <div class="menTop-div-title langSwitch-item" data-langSwitch-item="item-7" data-themeSwitchON>Расположение установки:</div>        
                     <div class="menTop-select">
                         <select id="unitTypeSelect" class="excludeClickEffect soundSelect">
-                            <option value="1">любое</option>
-                            <option value="2">подвесная</option>
-                            <option value="3">стационарная</option>
+                            <option value="1" class="langSwitch-item" data-langSwitch-item="item-8">любое</option>
+                            <option value="2" class="langSwitch-item" data-langSwitch-item="item-9">подвесная</option>
+                            <option value="3" class="langSwitch-item" data-langSwitch-item="item-10">стационарная</option>
                         </select>
                     </div>
                 </div>
                 <div class="menTop-div soundSelect-hover">
-                    <div class="menTop-div-title" data-themeSwitchON>Тип охлаждения, тепл-ников:</div>        
+                    <div class="menTop-div-title langSwitch-item" data-langSwitch-item="item-11" data-themeSwitchON>Тип охлаждения, тепл-ников:</div>        
                     <div class="menTop-select">
                       <select id="typeExchange" class="excludeClickEffect soundSelect">
-                        <option value="1">Без глубок. охлажд-я, возможны по холоду оба типа: фреон и/или вода</option>
-                        <option value="2">Без глубок. охлажд-я, только фреон</option>
-                        <option value="3">Без глубок. охлажд-я, только вода</option>
-                        <option value="4">С глубок. охлажд-ем, возможны по холоду оба типа: фреон и/или вода</option>
-                        <option value="5">С глубок. охлажд-ем, только фреон</option>
-                        <option value="6">С глубок. охлажд-ем, только вода</option>
-                        <option value="8">Только вод-й нагр. - много рядов(3R и выше/возд. отопл./слаб теп-л/и тп...)</option>
-                        <option value="7">Только водяной нагрев по теплу, стандарт</option>
+                        <option value="1" class="langSwitch-item" data-langSwitch-item="item-12">Без глубок. охлажд-я, возможны по холоду оба типа: фреон и/или вода</option>
+                        <option value="2" class="langSwitch-item" data-langSwitch-item="item-13">Без глубок. охлажд-я, только фреон</option>
+                        <option value="3" class="langSwitch-item" data-langSwitch-item="item-14">Без глубок. охлажд-я, только вода</option>
+                        <option value="4" class="langSwitch-item" data-langSwitch-item="item-15">С глубок. охлажд-ем, возможны по холоду оба типа: фреон и/или вода</option>
+                        <option value="5" class="langSwitch-item" data-langSwitch-item="item-16">С глубок. охлажд-ем, только фреон</option>
+                        <option value="6" class="langSwitch-item" data-langSwitch-item="item-17">С глубок. охлажд-ем, только вода</option>
+                        <option value="8" class="langSwitch-item" data-langSwitch-item="item-18">Только вод-й нагр. - много рядов(3R и выше/возд. отопл./слаб теп-л/и тп...)</option>
+                        <option value="7" class="langSwitch-item" data-langSwitch-item="item-19">Только водяной нагрев по теплу, стандарт</option>
                       </select>
                     </div>
                 </div>
         
                 <div class="menTop-div soundSelect-hover">
-                    <div class="menTop-div-title" data-themeSwitchON>Выбор на гране фола?</div>        
+                    <div class="menTop-div-title langSwitch-item" data-langSwitch-item="item-20" data-themeSwitchON>Выбор на гране фола?</div>        
                     <div class="menTop-select">
                       <select id="fallSelect" class="excludeClickEffect soundSelect">
-                        <option value="2">да, впритирку("в желтой зоне" допустимо)</option>
-                        <option value="1">нет, только в "зелёной зоне"</option>     
+                        <option value="2" class="langSwitch-item" data-langSwitch-item="item-21">да, впритирку("в желтой зоне" допустимо)</option>
+                        <option value="1" class="langSwitch-item" data-langSwitch-item="item-22">нет, только в "зелёной зоне"</option>     
                       </select>
                     </div>
                 </div>
@@ -179,7 +188,7 @@
                       <div class="row bg_1">
             
                         <div class="col-3 excludeClickEffect">
-                            <input class="indicatedAirFlow effect-4 excludeClickEffect" type="number" id="indicatedAirFlow" placeholder="Введите расход, м&sup3/ч">
+                            <input class="indicatedAirFlow effect-4 excludeClickEffect langSwitch-item" data-langSwitch-item="item-23" type="number" id="indicatedAirFlow" placeholder="Введите расход, м³/ч">
                               <span class="focus-border excludeClickEffect"></span>
                         </div>
                       </div>
@@ -191,16 +200,16 @@
                         <ion-icon class="excludeClickEffect" name="hardware-chip-outline" data-type="logo"></ion-icon>
                     </button>
                     <button class="second soundCopyPasteSearchQButton soundMulti-button-Item-hover" id="copyPasteSearchQButton">
-                        <span>Подставить расход в таблицу</span>
+                        <span class="langSwitch-item" data-langSwitch-item="item-24">Подставить расход в таблицу</span>
                         <ion-icon class="excludeClickEffect" name="copy" data-type="shadow"></ion-icon>
                     </button>
                     <button class="third soundDefaultQ soundMulti-button-Item-hover" id="defaultQ">
-                        <span>Вернуть дефолтные расходы</span>
+                        <span class="langSwitch-item" data-langSwitch-item="item-25">Вернуть дефолтные расходы</span>
                         <ion-icon class="excludeClickEffect" name="server-outline" data-type="shadow"></ion-icon>
                     </button>
                 </div>
                 
-                <div class="outputVUselect pb-1" data-themeSwitchON>Типоразмер: <span id="typeSize"></span></div>
+                <div class="outputVUselect pb-1" data-themeSwitchON><span class="langSwitch-item" data-langSwitch-item="item-26">Типоразмер: </span><span id="typeSize"></span></div>
             </div>
   
         </div>
@@ -209,21 +218,21 @@
             <table class="table table-scrollable mx-0 my-0">
                 <thead class="overflow-auto">
                     <tr class="bg-info my-0">
-                        <th class="tbCol-1" scope="col">Тип</th>
-                        <th class="tbCol-2" scope="col">Расход, м&sup3/ч</th>
-                        <th class="tbCol-3" scope="col">1R_H, м/с</th>
-                        <th class="tbCol-4" scope="col">2R_H, м/с</th>
-                        <th class="tbCol-5" scope="col">3R_H, м/с</th>
-                        <th class="tbCol-6" scope="col">3R_C, м/с</th>
-                        <th class="tbCol-7" scope="col">4R_C, м/с</th>
-                        <th class="tbCol-8" scope="col">5R_C, м/с</th>
-                        <th class="tbCol-9" scope="col">6R_C, м/с</th>
-                        <th class="tbCol-10" scope="col">7R_C, м/с</th>
-                        <th class="tbCol-11" scope="col">2R_F, м/с</th>
-                        <th class="tbCol-12" scope="col">3R_F, м/с</th>
-                        <th class="tbCol-13" scope="col">4R_F, м/с</th>
-                        <th class="tbCol-14" scope="col">5R_F, м/с</th>
-                        <th class="tbCol-15" scope="col">Тип</th>
+                        <th class="tbCol-1 langSwitch-item" scope="col" data-langSwitch-item="item-27">Тип</th>
+                        <th class="tbCol-2" scope="col"><span class="langSwitch-item" data-langSwitch-item="item-29">Расход</span>, м³/<span class="langSwitch-item" data-langSwitch-item="item-28">ч</span></th>
+                        <th class="tbCol-3" scope="col">1R_H, м/<span class="langSwitch-item" data-langSwitch-item="item-30">c</span></th>
+                        <th class="tbCol-4" scope="col">2R_H, м/<span class="langSwitch-item" data-langSwitch-item="item-30">c</span></th>
+                        <th class="tbCol-5" scope="col">3R_H, м/<span class="langSwitch-item" data-langSwitch-item="item-31">c</span></th>
+                        <th class="tbCol-6" scope="col">3R_C, м/<span class="langSwitch-item" data-langSwitch-item="item-32">c</span></th>
+                        <th class="tbCol-7" scope="col">4R_C, м/<span class="langSwitch-item" data-langSwitch-item="item-33">c</span></th>
+                        <th class="tbCol-8" scope="col">5R_C, м/<span class="langSwitch-item" data-langSwitch-item="item-34">c</span></th>
+                        <th class="tbCol-9" scope="col">6R_C, м/<span class="langSwitch-item" data-langSwitch-item="item-35">c</span></th>
+                        <th class="tbCol-10" scope="col">7R_C, м/<span class="langSwitch-item" data-langSwitch-item="item-36">c</span></th>
+                        <th class="tbCol-11" scope="col">2R_F, м/<span class="langSwitch-item" data-langSwitch-item="item-37">c</span></th>
+                        <th class="tbCol-12" scope="col">3R_F, м/<span class="langSwitch-item" data-langSwitch-item="item-38">c</span></th>
+                        <th class="tbCol-13" scope="col">4R_F, м/<span class="langSwitch-item" data-langSwitch-item="item-39">c</span></th>
+                        <th class="tbCol-14" scope="col">5R_F, м/<span class="langSwitch-item" data-langSwitch-item="item-40">c</span></th>
+                        <th class="tbCol-15 langSwitch-item" scope="col" data-langSwitch-item="item-41">Тип</th>
                     </tr>
                     <tr class="bg-info my-0">
                         <th class="tbCol-1" scope="col">1</th>
@@ -248,7 +257,8 @@
         </div>
     </div>
     <div class="menuTop-after"></div>
-
+   
+    <script src="https://altsandro.github.io/UTB/langD.db"></script>
     <script src="src/optable.js"></script>
     <script src="src/wts.db"></script>
     <script src="src/fr.db"></script>
@@ -262,26 +272,25 @@
     <script src="src/al.js"></script>
     <script src="src/foar.js"></script>
  
-
     <div id="scrollableTable" class="container overflow-auto justify-content-center pe-0 ps-0 mb-4">
         <table class="table table-scrollable mx-0">
             <thead class="overflow-auto">
                 <tr class="bg-info my-0">
-                    <th class="tbCol-1" scope="col">Тип</th>
-                    <th class="tbCol-2" scope="col">Расход, м&sup3/ч</th>
-                    <th class="tbCol-3" scope="col">1R_H, м/с</th>
-                    <th class="tbCol-4" scope="col">2R_H, м/с</th>
-                    <th class="tbCol-5" scope="col">3R_H, м/с</th>
-                    <th class="tbCol-6" scope="col">3R_C, м/с</th>
-                    <th class="tbCol-7" scope="col">4R_C, м/с</th>
-                    <th class="tbCol-8" scope="col">5R_C, м/с</th>
-                    <th class="tbCol-9" scope="col">6R_C, м/с</th>
-                    <th class="tbCol-10" scope="col">7R_C, м/с</th>
-                    <th class="tbCol-11" scope="col">2R_F, м/с</th>
-                    <th class="tbCol-12" scope="col">3R_F, м/с</th>
-                    <th class="tbCol-13" scope="col">4R_F, м/с</th>
-                    <th class="tbCol-14" scope="col">5R_F, м/с</th>
-                    <th class="tbCol-15" scope="col">Тип</th>
+                    <th class="tbCol-1 langSwitch-item" scope="col" data-langSwitch-item="item-42">Тип</th>
+                    <th class="tbCol-2" scope="col"><span class="langSwitch-item" data-langSwitch-item="item-29">Расход</span>, м³/<span class="langSwitch-item" data-langSwitch-item="item-28">ч</span></th>
+                    <th class="tbCol-3" scope="col">1R_H, м/<span class="langSwitch-item" data-langSwitch-item="item-30">c</span></th>
+                    <th class="tbCol-4" scope="col">2R_H, м/<span class="langSwitch-item" data-langSwitch-item="item-30">c</span></th>
+                    <th class="tbCol-5" scope="col">3R_H, м/<span class="langSwitch-item" data-langSwitch-item="item-30">c</span></th>
+                    <th class="tbCol-6" scope="col">3R_C, м/<span class="langSwitch-item" data-langSwitch-item="item-30">c</span></th>
+                    <th class="tbCol-7" scope="col">4R_C, м/<span class="langSwitch-item" data-langSwitch-item="item-30">c</span></th>
+                    <th class="tbCol-8" scope="col">5R_C, м/<span class="langSwitch-item" data-langSwitch-item="item-30">c</span></th>
+                    <th class="tbCol-9" scope="col">6R_C, м/<span class="langSwitch-item" data-langSwitch-item="item-30">c</span></th>
+                    <th class="tbCol-10" scope="col">7R_C, м/<span class="langSwitch-item" data-langSwitch-item="item-30">c</span></th>
+                    <th class="tbCol-11" scope="col">2R_F, м/<span class="langSwitch-item" data-langSwitch-item="item-30">c</span></th>
+                    <th class="tbCol-12" scope="col">3R_F, м/<span class="langSwitch-item" data-langSwitch-item="item-30">c</span></th>
+                    <th class="tbCol-13" scope="col">4R_F, м/<span class="langSwitch-item" data-langSwitch-item="item-30">c</span></th>
+                    <th class="tbCol-14" scope="col">5R_F, м/<span class="langSwitch-item" data-langSwitch-item="item-30">c</span></th>
+                    <th class="tbCol-15 langSwitch-item" scope="col" data-langSwitch-item="item-56">Тип</th>
                 </tr>
                 <tr class="bg-info my-0 d-none">
                     <th class="tbCol-1" scope="col">1</th>
@@ -315,7 +324,7 @@
             <ion-icon class="share-ionIcon excludeClickEffect" id="share-icon" name="share-social"></ion-icon>
             <ion-icon class="share-ionIcon excludeClickEffect" id="close-icon" name="close-sharp"></ion-icon>
           </div>
-
+          
           <ul class="excludeClickEffect">
             <li class="share-txt soundShareTxtB soundShareTxtB-hover excludeClickEffect">
                 <ion-icon name="МС-2" class="excludeClickEffect"></ion-icon>
@@ -465,7 +474,7 @@
         <div class="container py-0 my-0" data-themeSwitchON>
             <div>
                 <ul class="nav justify-content-center border-bottom py-1 pt-3 my-2 mt-0 ms-0 me-0 ps-0 me-0">
-                    <li class="nav-item pt-1">App by</li>
+                    <li class="nav-item pt-1 langSwitch-item" data-langSwitch-item="item-57">App by</li>
                     <li class="nav-item">
                         <div class="py-0 me-2 pe-2 position-relative">
                             <a class="nav-link px-2 preload-start-button soundAutorLable-hover" href="https://altsandro.github.io/d.pro-web/index.html">
@@ -479,8 +488,8 @@
                 </ul>
                 <div class="nav justify-content-center lh-lg">
                     <p class="nav justify-content-center py-1 my-1 custom-border">
-                        Thanks to&nbsp;<a href='https://icons8.com/' target="_blank" class="soundIcon8-hover">Icons8</a>&nbsp;for providing
-                        <span class="d-inline">&nbsp;the illustrations.</span>
+                        <span class="langSwitch-item" data-langSwitch-item="item-58">Thanks to</span>&nbsp;<a href='https://icons8.com/' target="_blank" class="soundIcon8-hover"><span class="langSwitch-item" data-langSwitch-item="item-59">Icons8</span></a>&nbsp;<span class="langSwitch-item" data-langSwitch-item="item-60">for providing</span>
+                        <span class="d-inline">&nbsp;<span class="langSwitch-item" data-langSwitch-item="item-61">the illustrations.</span></span>
                     </p>
                 </div>
             </div>
@@ -527,6 +536,8 @@
 
     <script src="src/theme/themeSwitcher.js"></script>
 
+    <script src="src/langDataMech.js"></script>
+
     <script src="src/clickCursorEffect.js"></script>
     
     <audio id="soundOk" src="audio/success-1-6297.mp3"></audio>
@@ -555,5 +566,7 @@
     
     <script src="src/stArr.js"></script>
     
+    
+
 </body>
 </html>

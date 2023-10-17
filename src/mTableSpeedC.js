@@ -305,10 +305,10 @@ function calcAirVel(airFlow, width, height) {
                     let choiceTsize = CurAirFlowArr[i]["uS"];
                     return choiceTsize;
                 } else if ( (maxNonNaN > options.vMax) && (i === (CurAirFlowArr.length - 1)) ) {
-                    return "не подобран - для МС80 превышен максимальный расход для данной конфигурации";
+                    return errContainer["item-62"];
                 }
             } else if ( filteredValues.every(isNoneContent) && (CurAirFlowArr[i]["uS"] == CurAirFlowArr[27]["uS"]) ) {
-                return "не подобран - в МС70-50 и выше возможно только водяное охлаждение";
+                return errContainer["item-63"];
             }
         }
     }

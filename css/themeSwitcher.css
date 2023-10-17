@@ -1,7 +1,7 @@
 .themeSwitcher-container {
     position: fixed;
-    top: -14px;
-    right: 77px;
+    top: -13px;
+    right: 120px;
     z-index: 5;
 }
 
@@ -80,3 +80,11 @@ input.themeSwitcher:checked+label+.background {
 input.themeSwitcher:active:after {
     width: 26px;
 }
+
+@media (max-width: 400px) {
+    .themeSwitcher-container {
+        top: 10px;
+        left: 11px;
+    }
+}
+

@@ -39,3 +39,5 @@ const matrix = [
 const aFR = fr;
 const fWTS = wts;
 const fBTS = bts;
+
+const errContainer = {};
